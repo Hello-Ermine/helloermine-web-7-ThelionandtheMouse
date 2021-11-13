@@ -2,21 +2,30 @@ import "./App.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Navbar, Nav } from "react-bootstrap";
 import styled from "styled-components";
+import NavRound from  "./components/NavRound.js";
+import React,{useEffect,useState} from "react";
+import AOS from 'aos';
+//style component
 function App() {
+  useEffect(()=>{
+    AOS.init({
+      duration : 2000
+    });
+  },[]);
+  const [offsetY, setOffsetY] = useState(0);
+  const handleScroll = () => setOffsetY(window.pageYOffset);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <>
-      <Navbar variant="light" style={{ backgroundColor: "white", color: "black" }}>
-        <Container fluid>
-          <Navbar.Brand>
-            <Nav.Link href="#" style={{ float: "right", color: "black" }}>
-              <h6>Logo</h6>
-            </Nav.Link>
-          </Navbar.Brand>
-          <Nav.Link href="#" style={{ float: "right", color: "black" }}>
-            <h6>go to concluding</h6>
-          </Nav.Link>
-        </Container>
-      </Navbar>
+      <NavRound data-aos={"fade-down"}/>
+      <section className="Parallax">
+          <div className="Parallax__background"></div>
+      </section>
     </>
   );
 }
