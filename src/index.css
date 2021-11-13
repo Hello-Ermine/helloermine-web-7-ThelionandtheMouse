@@ -1,13 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400;500&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
 body {
-  margin: 0;
+  /*margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;*/
+  background-image: url(./img/background.jpg);
+  background-repeat:repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.chapter_1 {
+  height: 700px;
+  text-align: center;
+  font-size: 28px;
+  font-family: 'Noto Sans Thai', sans-serif;
+}
+
+.chapter_1 p {
+  margin: top 60px; ;
+}
+
+.first_obj {
+  left: 200px;
+  position: absolute;
+}
+
+.chapter_2 {
+  height: 700px;
+  margin-top: 60px;
+  text-align: center;
+  font-size: 28px;
+  font-family: 'Noto Sans Thai', sans-serif;
+  margin-bottom: 80px;
+}
+
+.two_obj {
+  top: 1000px;
+  left: 300px;
+  position: absolute;
+}
+
+.chapter_3 {
+  height: 700px;
+  margin-top: 250px;
+  text-align: center;
+  font-size: 28px;
+  font-family: 'Noto Sans Thai', sans-serif;
+}
+
+
+.three_obj {
+  width: 800px;
+  top: 2000px;
+  left: 300px;
+  position: absolute;
+}
+
+.chapter_4 {
+  height: 700px;
+  margin-top: 200px;
+  text-align: center;
+  font-size: 28px;
+  font-family: 'Noto Sans Thai', sans-serif;
+}
+
+.four_obj {
+  top: 2900px;
+  left: 300px;
+  position: absolute;
+}
+
+.chapter_5 {
+  height: 700px;
+  margin-top: 200px;
+  text-align: center;
+  font-size: 28px;
+  font-family: 'Noto Sans Thai', sans-serif;
+}
+
+.five_obj {
+  top: 3700px;
+  left: 300px;
+  position: absolute;
 }
