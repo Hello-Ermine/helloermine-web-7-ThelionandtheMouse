@@ -2,30 +2,27 @@ import "./App.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Navbar, Nav } from "react-bootstrap";
 import styled from "styled-components";
-import NavRound from  "./components/NavRound.js";
 import React,{useEffect,useState} from "react";
 import AOS from 'aos';
-//style component
+import 'aos/dist/aos.css';
+
+//Component import here
+import NavRound from  "./components/NavRound.js";
+import MockCon from "./components/MockContent.js";
 function App() {
   useEffect(()=>{
     AOS.init({
-      duration : 2000
+      duration : 3000
     });
   },[]);
-  const [offsetY, setOffsetY] = useState(0);
-  const handleScroll = () => setOffsetY(window.pageYOffset);
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
   return (
     <>
       <NavRound data-aos={"fade-down"}/>
       <section className="Parallax">
+          <span id="Title">Lion And <br/>The Mouse</span>
           <div className="Parallax__background"></div>
       </section>
+      <MockCon/>
     </>
   );
 }

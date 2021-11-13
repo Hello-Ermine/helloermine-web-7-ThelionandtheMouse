@@ -1,8 +1,23 @@
-
+  section::before{
+    content: '';;
+    position:absolute;
+    bottom: 0px;
+    width: 100%;
+    margin-top: 50%;
+    height: 150px;
+    background: linear-gradient(to top,white,transparent);
+    z-index: 1000;
+  }
   .Parallax {
     display: flex;
     justify-content: center;
-  
+    span#Title{
+      margin-top: 20%;
+      font-size: 124px;
+      color:white;
+      text-align: center;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
     &__background,
     &__background-triangles {
       width: 100%;

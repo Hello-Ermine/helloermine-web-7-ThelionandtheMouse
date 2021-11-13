@@ -12,6 +12,7 @@ const NavBarRound = styled.div`
   list-style-type: none;
   align-items: center;
   transform:translateX(10%);
+  z-index: 100;
   span{
       font-size: 24px;
   }
