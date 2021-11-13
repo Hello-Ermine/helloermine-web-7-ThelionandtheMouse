@@ -12,7 +12,7 @@ const NavBarRound = styled.div`
   list-style-type: none;
   align-items: center;
   transform:translateX(10%);
-  z-index: 100;
+  z-index: 1000;
   span{
       font-size: 24px;
   }
@@ -21,14 +21,14 @@ const NavRound = () => {
   return (
     <>
       <NavBarRound>
-        <Container fluid>
+        <Container fluid style={{width:"90%",marginTop:"5px"}}>
           <Navbar.Brand>
-            <Nav.Link href="#" style={{ color: "black" ,display:"inline-block"}}>
-              <span>Logo replace</span>
+            <Nav.Link href="#" style={{ color: "white" ,display:"inline-block",backgroundColor:"green",borderRadius:"10px"}}>
+              <span>โลโก้</span>
             </Nav.Link>
           </Navbar.Brand>
-          <Nav.Link href="#" style={{ float: "right", color: "black" }}>
-            <span>To conclu</span>
+          <Nav.Link href="#" style={{ float: "right", color: "white" ,backgroundColor:"green",borderRadius:"10px"}}>
+            <span>สมาชิก</span>
           </Nav.Link>
         </Container>
       </NavBarRound>

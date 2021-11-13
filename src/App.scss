@@ -1,81 +1,61 @@
-  section::before{
-    content: '';;
-    position:absolute;
-    bottom: 0px;
-    width: 100%;
-    margin-top: 50%;
-    height: 150px;
-    background: linear-gradient(to top,white,transparent);
-    z-index: 1000;
+section::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  margin-top: 50%;
+  height: 150px;
+  background: linear-gradient(to top, white, transparent);
+  z-index: 1;
+}
+.Parallax {
+  display: flex;
+  justify-content: center;
+  span#Title {
+    margin-top: 10%;
+    font-size: 160px;
+    color:white;
+    text-align: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
-  .Parallax {
-    display: flex;
-    justify-content: center;
-    span#Title{
-      margin-top: 20%;
-      font-size: 124px;
-      color:white;
-      text-align: center;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
-    &__background,
-    &__background-triangles {
+  &__background{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+  }
+
+  &__background {
+    background-image: url("img/background.jpg");
+    z-index: -500;
+  }
+
+  &__bigcircle {
+      background-color: white;
       width: 100%;
       height: 100%;
-      background-repeat: no-repeat;
       position: absolute;
-    }
-  
-    &__background {
-       background-image: url("img/background.jpg");
-       z-index: -20;
-    }
-  
-    &__background-triangles {
-      // background-image: url("img/background-triangles.png");
-      // z-index: -1;
-    }
-  
-    &__content {
-      width: 1080px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      z-index: 1;
-      margin-top: 100px;
-  
-      &__heading,
-      &__cta {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-      }
-  
-      &__heading {
-        background-color: #fff;
-        width: 40%;
-        padding: 40px;
-  
-        &__text {
-          margin: 10px 0;
-          font-size: 60px;
-        }
-  
-        &__caption {
-          margin: 0;
-          font-size: 20px;
-        }
-      }
-  
-      &__cta {
-        background-color: #ff737e;
-        width: 60%;
-        padding: 40px;
-  
-        font-size: 20px;
-        color: #fff;
-  
-        margin-top: 120px;
-      }
-    }
+      display:flex;
+      border-top-left-radius: 50%;
+      border-top-right-radius: 50%;
+      z-index: -200;
+      margin-top: 37%;
+      background-size: cover;
   }
+  &__lionrat {
+    background-image: url("img/lion.png");
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    z-index: 500;
+    background-repeat: no-repeat;
+    display: flex;
+    margin-left: 15%;
+    margin-top: 20%;
+  }
+}
+.contentbox{
+  margin-top: 27%;
+}
