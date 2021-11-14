@@ -18,7 +18,8 @@ function App() {
     AOS.init({
       duration : 3000,
       once: false,
-      mirror:true
+      mirror:true,
+      startEvent: 'load'
     });
     window.addEventListener('scroll', handleScroll);
     return() =>window.addEventListener('scroll', handleScroll);
@@ -27,8 +28,8 @@ function App() {
     <>
       <NavRound data-aos={"fade-down"}/>
       <section className="Parallax">
-          <span id="Title" style={{transform:`translateY(${offsetY}px)`}} data-aos={"zoom-in"}>ราชสีห์กับหนู</span>
-          <div className="Parallax__lionrat" data-aos={"fade-up"} style={{transform:`translateY(${-offsetY*0.1}px)`}}></div>
+          <span id="Title" style={{transform:`translateY(${offsetY*0.85}px)`}} data-aos={"zoom-in"}>ราชสีห์กับหนู</span>
+          <div className="Parallax__lionrat" data-aos={"fade-up"} style={{transform:`translateY(${-offsetY*0.2}px)`}}></div>
           <div className="Parallax__background" style={{transform:`translateY(${offsetY*0.5}px)`}}></div>
           <div className="Parallax__bigcircle" style={{transform:`translateY(${-offsetY*0.3}px)`}}></div>
       </section>

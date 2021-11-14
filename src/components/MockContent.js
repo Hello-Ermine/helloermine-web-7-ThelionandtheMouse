@@ -33,6 +33,7 @@ const  Chapter4 = styled.div`
     font-size: 28px;
     font-family: 'Noto Sans Thai', sans-serif;
     z-index: 10;
+    padding: tpo 5%;
     position: relative;
 `;
 const  Chapter5 = styled.div`

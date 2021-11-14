@@ -36,8 +36,6 @@ const ContentBox = () => {
   },[]);
   return(
       <>
-        {/* <div className="Parallaxcontent__tree" style={{transform:`translateX(${offsetY*0.2}px)`}}><img src={tree} alt="tree"/></div>
-        <div className="Parallaxcontent__tree2" style={{transform:`translateX(${-offsetY*0.2}px)`}}><img src={tree} alt="tree"/></div> */}
         <div className="lionandmouse">
         <Chapter1 data-aos={"fade-up"}>
         <br/> <br/> <br/> <br/> <br/> 
@@ -45,6 +43,8 @@ const ContentBox = () => {
                 <br/>หนูน้อยขี้กลัวบังเอิญวิ่งมาบนตัวของมันโดยไม่ได้ตั้งใจ</p>
             <img src={lion} alt="lion"/>
         </Chapter1>
+        <div className="Parallaxcontent__tree" style={{transform:`translateX(${offsetY*0.9}px)`}}><img src={tree} alt="tree"/></div>
+        <div className="Parallaxcontent__tree2" style={{transform:`translateX(${-offsetY*0.9}px)`}}><img src={tree} alt="tree"/></div>
         <br/> <br/> <br/> <br/> <br/> <br/> <br/>  <br/> <br/> <br/> <br/> <br/> <br/> <br/>  <br/> <br/> <br/> <br/> <br/> <br/> <br/> 
         <Chapter2 data-aos={"fade-up"} className="aos-item">
         <p>ด้วยความกลัวและร้อนรนที่จะรีบหนีไปให้พ้น <br/>เจ้าหนูกลับแล่นปรูดไปบนจมูกราชสีห์ <br/>ราชสีห์งีบหลับอยู่ดีๆ
@@ -53,6 +53,8 @@ const ContentBox = () => {
             </p>
             <img src={frame2} alt="lion"/>
         </Chapter2>
+        {/* <div className="Parallaxcontent__tree" style={{transform:`translateX(${offsetY<2352?offsetY:200}px)`}}><img src={tree} alt="tree"/></div>
+        <div className="Parallaxcontent__tree2" style={{transform:`translateX(${-offsetY*0.2}px)`}}><img src={tree} alt="tree"/></div> */}
         <br/> <br/> <br/> <br/> <br/> <br/> <br/>  <br/> <br/> <br/> <br/> <br/> <br/> <br/>  <br/> <br/> <br/> <br/> <br/> <br/> <br/> 
         <Chapter3 data-aos={"fade-left"} className="aos-item">
         <p>"ปล่อยข้าไปเถิด" เจ้าหนูผู้น่าสงสารขอร้อง <br/>"กรุณาปล่อยข้าไป
@@ -61,7 +63,7 @@ const ContentBox = () => {
             <img src={frame3} alt="lion"/>
         </Chapter3>
         <br/> <br/> <br/> <br/> <br/> <br/> <br/>  <br/> <br/> <br/> <br/> <br/> <br/> <br/>  <br/> <br/> <br/> <br/> <br/> <br/> <br/> 
-        <Chapter4 data-aos={"fade-right"} className="aos-item">
+        <Chapter4 data-aos={"fade-down"} data-aos-anchor-placement={"bottom-bottom"}className="aos-item">
         <p> อีกไม่กี่วันต่อมา ขณะกำลังซุ่มล่าเหยื่ออยู่ในป่า ราชสีห์ก็ติดบ่วงของนายพราน
                 <br/>มันไม่อาจหลุดเป็นอิสระบ่วงของนายพรานได้จึงคำรามเสียงดัง
                 ก้องป่าด้วยความโกรธแค้น <br/>เจ้าหนูจำเสียงนั้นได้จึงรีบวิ่งมาเจ้าป่ากำลังดิ้นรนอยู่ในตาข่าย
