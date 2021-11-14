@@ -10,6 +10,7 @@ import 'aos/dist/aos.css';
 import NavRound from  "./components/NavRound.js";
 import MockCon from "./components/MockContent.js";
 import ContentBox from "./components/Content.js";
+import BottomContent from "./components/BottomContent";
 function App() {
   const [offsetY,setOffsetY] = useState(0);
   const handleScroll = () => setOffsetY(window.pageYOffset);
@@ -35,6 +36,7 @@ function App() {
       </section>
       <section className="contentbox">
         <ContentBox/>
+        <BottomContent/>
       </section>
     </>
   );
