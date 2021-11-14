@@ -1,12 +1,15 @@
-section::before {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  margin-top: 50%;
-  height: 150px;
-  background: linear-gradient(to top, white, transparent);
-  z-index: 1;
+// section::before {
+//   content: "";
+//   position: absolute;
+//   bottom: 0px;
+//   width: 100%;
+//   margin-top: 50%;
+//   height: 150px;
+//   background: linear-gradient(to top, white, transparent);
+//   z-index: 1;
+// }
+body{
+  font-family: 'Mitr', sans-serif;
 }
 .Parallax {
   display: flex;
@@ -16,8 +19,8 @@ section::before {
     font-size: 160px;
     color:white;
     text-align: center;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-family: 'Mitr', sans-serif;
+    z-index: -50;
   }
   &__background{
     width: 100%;
@@ -41,7 +44,7 @@ section::before {
       border-top-left-radius: 50%;
       border-top-right-radius: 50%;
       z-index: -200;
-      margin-top: 37%;
+      margin-top: 40%;
       background-size: cover;
   }
   &__lionrat {
@@ -58,4 +61,5 @@ section::before {
 }
 .contentbox{
   margin-top: 27%;
+  background-color: white;
 }

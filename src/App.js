@@ -9,12 +9,16 @@ import 'aos/dist/aos.css';
 //Component import here
 import NavRound from  "./components/NavRound.js";
 import MockCon from "./components/MockContent.js";
+import ContentBox from "./components/Content.js";
 function App() {
   const [offsetY,setOffsetY] = useState(0);
   const handleScroll = () => setOffsetY(window.pageYOffset);
+  console.log(offsetY);
   useEffect(()=>{
     AOS.init({
-      duration : 2000
+      duration : 3000,
+      once: false,
+      mirror:true
     });
     window.addEventListener('scroll', handleScroll);
     return() =>window.addEventListener('scroll', handleScroll);
@@ -23,13 +27,13 @@ function App() {
     <>
       <NavRound data-aos={"fade-down"}/>
       <section className="Parallax">
-          <span id="Title" style={{transform:`translateY(${offsetY}px)`}}>ราชสีห์กับหนู</span>
-          <div className="Parallax__lionrat" data-aos={"fade-up"}></div>
-          <div className="Parallax__background"></div>
-          <div className="Parallax__bigcircle"></div>
+          <span id="Title" style={{transform:`translateY(${offsetY}px)`}} data-aos={"zoom-in"}>ราชสีห์กับหนู</span>
+          <div className="Parallax__lionrat" data-aos={"fade-up"} style={{transform:`translateY(${-offsetY*0.1}px)`}}></div>
+          <div className="Parallax__background" style={{transform:`translateY(${offsetY*0.5}px)`}}></div>
+          <div className="Parallax__bigcircle" style={{transform:`translateY(${-offsetY*0.3}px)`}}></div>
       </section>
       <section className="contentbox">
-        <MockCon/>
+        <ContentBox/>
       </section>
     </>
   );
