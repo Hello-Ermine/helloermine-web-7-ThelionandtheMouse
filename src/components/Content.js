@@ -37,15 +37,17 @@ const ContentBox = () => {
   return(
       <>
         <div className="lionandmouse">
+         {/* <div className="lionandmouse_bg"></div> */}
         <Chapter1 data-aos={"fade-up"}>
+           <div className="bggg"></div>
         <br/> <br/> <br/> <br/> <br/> 
             <p>ราชสีห์ตัวหนึ่งเอนกายหลับใหลอยู่ในป่าทึบ <br/>หัวอันใหญ่โตของมันวางอยู่บนหัวอุ้งเท้า
                 <br/>หนูน้อยขี้กลัวบังเอิญวิ่งมาบนตัวของมันโดยไม่ได้ตั้งใจ</p>
             <img src={lion} alt="lion"/>
         </Chapter1>
-        <div className="Parallaxcontent__tree" style={{transform:`translateX(${offsetY*0.9}px)`}}><img src={tree} alt="tree"/></div>
-        <div className="Parallaxcontent__tree2" style={{transform:`translateX(${-offsetY*0.9}px)`}}><img src={tree} alt="tree"/></div>
-        <br/> <br/> <br/> <br/> <br/> <br/> <br/>  <br/> <br/> <br/> <br/> <br/> <br/> <br/>  <br/> <br/> <br/> <br/> <br/> <br/> <br/> 
+        <div className="Parallaxcontent__tree" style={{transform:`translateX(${offsetY*0.1}px)`}}><img src={tree} alt="tree"/></div>
+        <div className="Parallaxcontent__tree2" style={{transform:`translateX(${-offsetY*0.1}px)`}}><img src={tree} alt="tree"/></div>
+        {/* <div className="lionandmouse_bg"></div> */}
         <Chapter2 data-aos={"fade-up"} className="aos-item">
         <p>ด้วยความกลัวและร้อนรนที่จะรีบหนีไปให้พ้น <br/>เจ้าหนูกลับแล่นปรูดไปบนจมูกราชสีห์ <br/>ราชสีห์งีบหลับอยู่ดีๆ
                 ครั้นถูกรบกวนมันจึงตะปบอุ้งเท้าอันใหญ่โต<br/>ลงไปบนเจ้าสัตว์ตัวน้อยด้วยความฉุนโกรธ
@@ -53,25 +55,25 @@ const ContentBox = () => {
             </p>
             <img src={frame2} alt="lion"/>
         </Chapter2>
+        {/* <div className="lionandmouse_bg"></div> */}
         {/* <div className="Parallaxcontent__tree" style={{transform:`translateX(${offsetY<2352?offsetY:200}px)`}}><img src={tree} alt="tree"/></div>
         <div className="Parallaxcontent__tree2" style={{transform:`translateX(${-offsetY*0.2}px)`}}><img src={tree} alt="tree"/></div> */}
-        <br/> <br/> <br/> <br/> <br/> <br/> <br/>  <br/> <br/> <br/> <br/> <br/> <br/> <br/>  <br/> <br/> <br/> <br/> <br/> <br/> <br/> 
         <Chapter3 data-aos={"fade-left"} className="aos-item">
         <p>"ปล่อยข้าไปเถิด" เจ้าหนูผู้น่าสงสารขอร้อง <br/>"กรุณาปล่อยข้าไป
                 แล้วสักวันหนึ่งข้าจะตอบแทนเจ้าอย่างแน่นอน"<br/>
                 ราชสีห์รู้สึกขบขันยิ่งนักเมื่อคิดว่าเจ้าหนูจะมาช่วยอะไร<br/></p>
             <img src={frame3} alt="lion"/>
         </Chapter3>
-        <br/> <br/> <br/> <br/> <br/> <br/> <br/>  <br/> <br/> <br/> <br/> <br/> <br/> <br/>  <br/> <br/> <br/> <br/> <br/> <br/> <br/> 
-        <Chapter4 data-aos={"fade-down"} data-aos-anchor-placement={"bottom-bottom"}className="aos-item">
+        {/* <div className="lionandmouse_bg"></div> */}
+        <Chapter4 data-aos={"fade-up"} data-aos-anchor-placement={"bottom-bottom"}className="aos-item">
         <p> อีกไม่กี่วันต่อมา ขณะกำลังซุ่มล่าเหยื่ออยู่ในป่า ราชสีห์ก็ติดบ่วงของนายพราน
                 <br/>มันไม่อาจหลุดเป็นอิสระบ่วงของนายพรานได้จึงคำรามเสียงดัง
                 ก้องป่าด้วยความโกรธแค้น <br/>เจ้าหนูจำเสียงนั้นได้จึงรีบวิ่งมาเจ้าป่ากำลังดิ้นรนอยู่ในตาข่าย
                 <br/>มันรีบวิ่งตรงไปที่เชือกเส้นใหญ่เส้นหนึ่งซึ่งรัดราชสีห์เอาไว้ก่อนจะ
                 กัดแทะเชือกจนขาด</p>
             <img src={frame4} alt="lion"/>
-        </Chapter4>
-        <br/> <br/> <br/> <br/> <br/> <br/> <br/>  <br/> <br/> <br/> <br/> <br/> <br/> <br/>  <br/> <br/> <br/> <br/> <br/> <br/> <br/>  <br/> <br/> <br/> <br/> <br/> <br/> <br/>  <br/> <br/> <br/> <br/> <br/> <br/> <br/> 
+        </Chapter4> 
+        {/* <div className="lionandmouse_bg"></div> */}
         <Chapter5 data-aos={"fade-up"} className="aos-item">
         <p> ในที่สุดราชสีห์ก็เป็นอิสระ<br/>
                 "ท่านหัวเราะตอนที่ข้าบอกว่าจะตอบแทนท่าน" เจ้าหนูกล่าว <br/>"บัดนี้ท่านคงเห็นแล้วว่าแม้แต่หนูก็ช่วยราชสีห์ได้"

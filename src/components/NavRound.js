@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Container, Navbar, Nav } from "react-bootstrap";
+import "./stylecontent.scss";
 const NavBarRound = styled.div`
   position: fixed;
   background-color: #48590B;
@@ -13,6 +14,7 @@ const NavBarRound = styled.div`
   align-items: center;
   z-index: 1000;
   font-family: 'Mitr', sans-serif;
+  /* transform: translateX(12%); */
   span{
       font-size: 24px;
   }
@@ -27,10 +29,10 @@ const NavRound = () => {
               <span>โลโก้</span>
             </Nav.Link>
           </Navbar.Brand>
-          <Nav.Link href="#" style={{ float: "right", color: "white" ,backgroundColor:"",borderRadius:"10px",marginLeft:"10px"}} onClick={()=>window.scrollTo(0,document.body.scrollHeight)}>
-            <span>สมาชิก</span>
+          <Nav.Link href="#" style={{ float: "right", color: "white" ,backgroundColor:"",borderRadius:"10px",marginLeft:"10px"}} onClick={()=>window.scrollTo(0,document.body.scrollHeight)} className="bt">
+            <span>ผู้จัดทำ</span>
           </Nav.Link>
-          <Nav.Link href="#" style={{ float: "right", color: "white" ,backgroundColor:"",borderRadius:"10px"}} onClick={()=>window.scrollTo({top:0,behavior:"smooth"})}>
+          <Nav.Link href="#" style={{ float: "right", color: "white" ,backgroundColor:"",borderRadius:"10px"}} onClick={()=>window.scrollTo({top:0,behavior:"smooth"})} className="bt">
             <span>Home</span>
           </Nav.Link>
         </Container>

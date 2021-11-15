@@ -14,7 +14,6 @@ import BottomContent from "./components/BottomContent";
 function App() {
   const [offsetY,setOffsetY] = useState(0);
   const handleScroll = () => setOffsetY(window.pageYOffset);
-  console.log(offsetY);
   useEffect(()=>{
     AOS.init({
       duration : 3000,
@@ -22,6 +21,7 @@ function App() {
       mirror:true,
       startEvent: 'load'
     });
+    document.title = "Lion and the mouse";
     window.addEventListener('scroll', handleScroll);
     return() =>window.addEventListener('scroll', handleScroll);
   },[]);

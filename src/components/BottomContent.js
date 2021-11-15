@@ -1,9 +1,16 @@
 import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
 import avatar from './img/avatar.jpg';
-
-const  Content = styled.div`
-padding: 15%  5% 5% 10%;
+import AOS from 'aos';
+const  Lastsection = styled.div`
+    font-family: 'Mitr', sans-serif;
+    .team{
+        margin-top: 5%;
+    }
+`;
+const Content = styled.div`
+margin-top: 5%;
+padding: 6%  5% 6% 5%;
 background-color: whitesmoke;
 opacity: 1;
 /* border: 5px solid rgba(255, 255, 255, .5);
@@ -13,6 +20,20 @@ z-index: 10;
 p {
   font-size: 18px;
 }
+font-family: 'Mitr', sans-serif;
+h1{
+    font-size: 72px;
+}
+h2{
+    text-align: center;
+    font-size: 72px;
+}
+.moral{
+    text-align: center;
+    span{
+        font-size: 48px;
+    }
+}
 `;
 
 const roundedimg = {
@@ -20,13 +41,18 @@ width: "100%",
 borderRadius: "50%",
 };
 
-
 const BottomCon = () =>{
     return (
+        <Lastsection>
     <Content>
-    <Container>
+        <div className="moral" data-aos={"zoom-in"} data-aos-duration={"1000"}> 
+          <h2>ข้อคิด</h2>
+          <span>ความเมตตาไม่เคยสูญเปล่า</span>
+        </div>
+    </Content>
+    <Container className="team" data-aos={"zoom-in"} data-aos-duration={"1000"}>
         <Col className='col-12 text-center'><h1>ผู้จัดทำ</h1></Col>
-        <Row>
+        <Row style={{marginTop:"2%"}}>
             <Col className='col-2'><img src={avatar} alt="avatar" style={roundedimg}/></Col>
             <Col className='col-2'><img src={avatar} alt="avatar" style={roundedimg}/></Col>
             <Col className='col-2'><img src={avatar} alt="avatar" style={roundedimg}/></Col>
@@ -43,7 +69,7 @@ const BottomCon = () =>{
             <Col className='col-2'><p>ชื่อเล่น 001</p></Col>
         </Row>
     </Container>
-    </Content>
+    </Lastsection>
     );
 };
 export default BottomCon;
