@@ -1,11 +1,12 @@
 import styled from "styled-components";
 import { Container, Navbar, Nav } from "react-bootstrap";
 import "./stylecontent.scss";
+import App from "./src/A"
 const NavBarRound = styled.div`
   position: fixed;
   background-color: #48590B;
-  /* border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px; */
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   width: 100%;
   height:7%;
   margin: 0 auto;
