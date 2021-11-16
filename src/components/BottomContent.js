@@ -5,18 +5,18 @@ import AOS from 'aos';
 const  Lastsection = styled.div`
     font-family: 'Mitr', sans-serif;
     .team{
-        margin-top: 5%;
+        margin-top: 10%;
     }
 `;
 const Content = styled.div`
-margin-top: 5%;
-padding: 6%  5% 6% 5%;
-background-color: whitesmoke;
+padding: 0%  5% 6% 5%;
+/* background-color: whitesmoke; */
 opacity: 1;
 /* border: 5px solid rgba(255, 255, 255, .5);
 box-shadow: 0 0 15px 15px white; */
 position:relative;
 z-index: 10;
+margin-bottom: 13%;
 p {
   font-size: 18px;
 }
@@ -33,6 +33,7 @@ h2{
     span{
         font-size: 48px;
     }
+    margin-bottom:3%;
 }
 `;
 

@@ -23,16 +23,16 @@ function App() {
     });
     document.title = "Lion and the mouse";
     window.addEventListener('scroll', handleScroll);
-    return() =>window.addEventListener('scroll', handleScroll);
+    return() =>window.removeEventListener('scroll', handleScroll);
   },[]);
   return (
     <>
       <NavRound data-aos={"fade-down"}/>
       <section className="Parallax">
-          <span id="Title" style={{transform:`translateY(${offsetY*0.85}px)`}} data-aos={"zoom-in"}>ราชสีห์กับหนู</span>
+          <span id="Title" style={{transform:`translateY(${offsetY*1}px)`}} data-aos={"zoom-in"}>ราชสีห์กับหนู</span>
           <div className="Parallax__lionrat" data-aos={"fade-up"} style={{transform:`translateY(${-offsetY*0.2}px)`}}></div>
           <div className="Parallax__background" style={{transform:`translateY(${offsetY*0.5}px)`}}></div>
-          <div className="Parallax__bigcircle" style={{transform:`translateY(${-offsetY*0.3}px)`}}></div>
+          <div className="Parallax__mountain"></div>
       </section>
       <section className="contentbox">
         <ContentBox/>
