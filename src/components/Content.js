@@ -7,7 +7,7 @@ import tree from './img/object1.png';
 import lion from "./img/1.png";
 import frame2 from "./img/2.png";
 import frame3 from "./img/3.png";
-import frame4 from "./img/4.png";
+import frame4 from "./img/object7-05.png";
 import frame5 from "./img/5.png";
 import obj2 from "./img/object2.png";
 import { Chapter1,Chapter2,Chapter3,Chapter4,Chapter5 } from "./MockContent";
@@ -52,10 +52,12 @@ const ContentBox = () => {
         <div className="content-obj5"></div>
         <div className="content-obj6"></div>
         <div className="content-obj7"></div>
-        <Chapter4 data-aos={"fade-up"} className="aos-item">
+        <Chapter4  className="aos-item">
           <Row>
-          <Col className="col-5"> <img src={frame4} alt="lion" style={{width:"75%"}} data-aos={"fade-up"} data-aos-anchor-placement={"top-bottom"} data-aos-duration={"3000"}/></Col>
-          <Col className="col-5"> <p> <br/><br/>อีกไม่กี่วันต่อมา ขณะกำลังซุ่มล่าเหยื่ออยู่ในป่า ราชสีห์ก็ติดบ่วงของนายพราน
+          <div className="content-objnest" data-aos={"zoom-out"}></div>
+          <div className="content-rat" data-aos={"fade-right"}></div>
+          <Col className="col-5"> <img src={frame4} alt="lion" style={{width:"75%"}} data-aos={"fade-up"}/></Col>
+          <Col className="col-5" data-aos={"zoom-in"}> <p> <br/><br/>อีกไม่กี่วันต่อมา ขณะกำลังซุ่มล่าเหยื่ออยู่ในป่า ราชสีห์ก็ติดบ่วงของนายพราน
                 มันไม่อาจหลุดเป็นอิสระบ่วงของนายพรานได้จึงคำรามเสียงดัง
                 ก้องป่าด้วยความโกรธแค้น เจ้าหนูจำเสียงนั้นได้จึงรีบวิ่งมาเจ้าป่ากำลังดิ้นรนอยู่ในตาข่าย
                 มันรีบวิ่งตรงไปที่เชือกเส้นใหญ่เส้นหนึ่งซึ่งรัดราชสีห์เอาไว้ก่อนจะ

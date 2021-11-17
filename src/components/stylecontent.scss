@@ -68,22 +68,22 @@
   width: 100vw;
   &-bg {
     width: 102vw;
-    height: 6780px;
+    height: 6795px;
     background-image: url("img/background test.jpg");
     background-repeat: no-repeat;
     position: absolute;
-    background-size: 2040px 6780px;
-    transform: translateX(-45px);
+    background-size: 2040px 6795px;
+    transform: translate(-45px,-20px);
   }
   &-obj1 {
     background-image: url("img/object3.png");
-    width: 100%;
-    height: 80%;
+    width: 2000px;
+    height: 90%;
     position: absolute;
     z-index: 450;
     background-repeat: no-repeat;
     background-size: contain;
-    transform: translateY(-30%);
+    transform: translate(-3%,-30%);
   }
   &-obj2 {
     background-image: url("img/object2.png");
@@ -150,6 +150,30 @@
     background-size: contain;
     display: flex;
     transform: translate(100%, -80%) rotateZ(10deg) scaleX(-1);
+  }
+  &-objnest{
+    background-image: url("img/object 4.png");
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    z-index: 10;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    margin-left: 12%;
+    transform: translate(40%, 20%) ;
+  }
+  &-rat{
+    background-image: url("img/rat.png");
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    z-index: 10;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    margin-left: 30%;
+    margin-top: 20%;
   }
   &-obj8 {
     background-image: url("img/object8.png");

@@ -46,7 +46,7 @@ const BottomCon = () =>{
     return (
         <Lastsection>
     <Content>
-        <div className="moral" data-aos={"zoom-in"} data-aos-duration={"1000"}> 
+        <div className="moral" data-aos={"zoom-in"} data-aos-duration={"3000"}> 
           <h2>ข้อคิด</h2>
           <span>ความเมตตาไม่เคยสูญเปล่า</span>
         </div>

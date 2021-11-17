@@ -25,8 +25,8 @@ const NavRound = () => {
     <>
       <NavBarRound>
         <Container fluid style={{width:"95%"}}>
-          <Navbar.Brand>
-            <Nav.Link href="#" style={{ color: "white" ,display:"inline",backgroundColor:"",borderRadius:"10px"}}>
+          <Navbar.Brand className="linkho">
+            <Nav.Link href="#" style={{ color: "white" ,display:"inline",backgroundColor:"",borderRadius:"10px"}} onClick={()=>window.scrollTo({top:0,behavior:"smooth"})}>
               <img src={logo} alt="logo" style={{width:"80px",height:"80px"}}/>
             </Nav.Link>
           </Navbar.Brand>
