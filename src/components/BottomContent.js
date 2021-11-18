@@ -7,6 +7,7 @@ import avatar4 from './img/members/4.png';
 import avatar5 from './img/members/5.png';
 import avatar6 from './img/members/6.png';
 import AOS from 'aos';
+import {useRef} from 'react';
 const  Lastsection = styled.div`
     font-family: 'Itim', cursive;
     .team{
@@ -57,7 +58,7 @@ width: "200px",
 borderRadius: "20px",
 };
 
-const BottomCon = () =>{
+const BottomCon = (props) =>{
     return (
         <Lastsection>
     <Content>

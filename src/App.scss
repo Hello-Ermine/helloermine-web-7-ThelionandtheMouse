@@ -11,6 +11,9 @@
 body{
   font-family: 'Itim', cursive;
 }
+html{
+  scroll-behavior: smooth;
+}
 .Parallax {
   display: flex;
   justify-content: center;

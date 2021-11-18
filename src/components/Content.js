@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Row, Col} from "react-bootstrap";
-import React,{useEffect,useState} from "react";
+import React,{useEffect,useState,useRef} from "react";
 import AOS from 'aos';
 import "./stylecontent.scss";
 import tree from './img/object1.png';
@@ -11,7 +11,7 @@ import frame4 from "./img/object7-05.png";
 import frame5 from "./img/5.png";
 import obj2 from "./img/object2.png";
 import { Chapter1,Chapter2,Chapter3,Chapter4,Chapter5 } from "./MockContent";
-const ContentBox = () => {
+const ContentBox = (props) => {
   const [offsetY,setOffsetY] = useState(0);
   const handleScroll = () => setOffsetY(window.pageYOffset);
   useEffect(()=>{
@@ -25,8 +25,8 @@ const ContentBox = () => {
       <>
         <div className="content">
         <div className="content-bg"></div>
-         <div className="content-obj1"></div>
-        <Chapter1>
+         {/* <div className="content-obj1"></div> */}
+        <Chapter1 ref={props.refProp}>
         <br/> <br/> <br/> <br/> <br/> 
             <p>ราชสีห์ตัวหนึ่งเอนกายหลับใหลอยู่ในป่าทึบ <br/>หัวอันใหญ่โตของมันวางอยู่บนหัวอุ้งเท้า
                 <br/>หนูน้อยขี้กลัวบังเอิญวิ่งมาบนตัวของมันโดยไม่ได้ตั้งใจ</p>

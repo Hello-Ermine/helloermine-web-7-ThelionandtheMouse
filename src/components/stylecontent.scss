@@ -115,9 +115,8 @@
     z-index: 10;
     background-repeat: no-repeat;
     background-size: contain;
-    display: flex;
     margin-left: 12%;
-    transform: translate(40%, 20%) ;
+    // transform: translate(40%, 20%) ;
   }
   &-rat{
     background-image: url("img/rat.png");
