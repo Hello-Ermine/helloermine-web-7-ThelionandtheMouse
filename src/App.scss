@@ -9,17 +9,17 @@
 //   z-index: 1;
 // }
 body{
-  font-family: 'Mitr', sans-serif;
+  font-family: 'Itim', cursive;
 }
 .Parallax {
   display: flex;
   justify-content: center;
   span#Title {
     margin-top: 10%;
-    font-size: 144px;
+    font-size: 164px;
     color:black;
     text-align: center;
-    font-family: 'Mitr', sans-serif;
+    font-family: 'Itim', cursive;
     z-index:-30;
     &:hover{
       color: white;
@@ -49,15 +49,15 @@ body{
   }
   &-lionrat {
     background-image: url("img/lionpara.png");
-    width: 1200px;
-    height: 1200px;
+    width: 1550px;
+    height: 1550px;
     position: absolute;
     z-index: 500;
     background-repeat: no-repeat;
     background-size: contain;
     display: flex;
-    margin-top: 15%;
-    transform: translateY(500px);
+    margin-top: 13%;
+    transform: translateY(-100px);
   }
   &-mountain1{
     background-image: url("img/opening 1.png");

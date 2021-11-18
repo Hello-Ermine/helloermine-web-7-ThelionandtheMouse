@@ -6,8 +6,8 @@ const  Chapter1 = styled.div`
     margin-top: 29.5%;
     height: 934px;
     text-align: center;
-    font-size: 36px;
-    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 48px;
+    font-family: 'Itim', cursive;
     z-index: 5;
     position: relative;
     width: 100%;
@@ -24,8 +24,8 @@ const  Chapter1 = styled.div`
 const  Chapter2 = styled.div`
     height: 934px;
     text-align: center;
-    font-size: 36px;
-    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 48px;
+    font-family: 'Itim', cursive;
     margin-bottom: 80px;
     z-index: 10;
     position: relative;
@@ -35,8 +35,8 @@ const  Chapter2 = styled.div`
 const  Chapter3 = styled.div`
     height: 934px;
     text-align: center;
-    font-size: 36px;
-    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 48px;
+    font-family: 'Itim', cursive;
     z-index: 10;
     position: relative;
     margin-top:20%;
@@ -45,8 +45,8 @@ const  Chapter3 = styled.div`
 const  Chapter4 = styled.div`
     height: 934px;
     text-align: center;
-    font-size: 36px;
-    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 48px;
+    font-family: 'Itim', cursive;
     z-index: 10;
     position: relative;
     padding-top: 1%;
@@ -55,8 +55,8 @@ const  Chapter4 = styled.div`
 const  Chapter5 = styled.div`
     height: 934px;
     text-align: center;
-    font-size: 36px;
-    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 48px;
+    font-family: 'Itim', cursive;
     z-index: 10;
     position: relative;
     margin-top:5%;

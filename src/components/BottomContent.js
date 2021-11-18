@@ -8,7 +8,7 @@ import avatar5 from './img/members/5.png';
 import avatar6 from './img/members/6.png';
 import AOS from 'aos';
 const  Lastsection = styled.div`
-    font-family: 'Mitr', sans-serif;
+    font-family: 'Itim', cursive;
     .team{
         margin-top: 10%;
     }
@@ -25,7 +25,7 @@ margin-bottom: 13%;
 p {
   font-size: 18px;
 }
-font-family: 'Mitr', sans-serif;
+font-family: 'Itim', cursive;
 h1{
     font-size: 72px;
 }

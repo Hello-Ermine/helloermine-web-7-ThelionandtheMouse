@@ -27,7 +27,7 @@ function App() {
   },[]);
   return (
     <>
-      <NavRound data-aos={"fade-down"}/>
+      <NavRound data-aos={"fade-down"} offY={offsetY}/>
       <section className="Parallax">
           <span id="Title" style={{transform:`translateY(${offsetY*0.8}px)`}} data-aos={"zoom-in"}>ราชสีห์กับหนู</span>
           <div className="Parallax-lionrat" data-aos={"fade-up"} style={{transform:`translateY(${-offsetY*0.2}px)`}}></div>

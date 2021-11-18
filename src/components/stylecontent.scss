@@ -7,58 +7,14 @@
     width: 350%;
     height: 120%;
     position: absolute;
-    z-index: 30;
-    margin-top: -25%;
+    z-index: 1;
+    margin-top: -15%;
     display: table;
 
     img {
       width: 20%;
-      height: 45%;
+      height: 40%;
       margin-left: 3%;
-    }
-  }
-  &__tree2 {
-    width: 100%;
-    height: 20%;
-    position: absolute;
-    z-index: 10;
-    margin-top: -25%;
-    display: table;
-
-    img {
-      width: 20%;
-      height: 45%;
-      margin-left: 70%;
-    }
-  }
-  &__tree3 {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 5000;
-    margin-left: 20%;
-    margin-top: -25%;
-    display: table;
-
-    img {
-      width: 20%;
-      height: 45%;
-      transform: translateX(-300px);
-    }
-  }
-  &__tree4 {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 5001;
-    margin-left: 110%;
-    margin-top: -25%;
-    display: table;
-
-    img {
-      width: 20%;
-      height: 45%;
-      transform: translateX(-700px);
     }
   }
 }
@@ -73,7 +29,7 @@
     background-repeat: no-repeat;
     position: absolute;
     background-size: 2040px 6795px;
-    transform: translate(-45px,-20px);
+    transform: translate(-50px,-20\px);
   }
   &-obj1 {
     background-image: url("img/object3.png");
