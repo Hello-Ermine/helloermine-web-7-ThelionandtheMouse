@@ -39,16 +39,16 @@ const NavRound = (props) => {
             </Nav.Link>
           </Navbar.Brand>
           <Link to="bot" spy={true} smooth={true}>
-          <Nav.Link href="/#" style={{ float: "right", color: "white" ,backgroundColor:`${props.offY > 6500 ? "#bf4b21":""}`,borderRadius:"10px",marginLeft:"10px",marginTop:"14px"}} onClick={()=>window.scrollTo(0,document.body.scrollHeight)} className="bt">
+          <Nav.Link href="/team" style={{ float: "right", color: "white" ,backgroundColor:`${props.offY > 6500 ? "#bf4b21":""}`,borderRadius:"10px",marginLeft:"10px",marginTop:"14px"}} onClick={()=>window.scrollTo(0,document.body.scrollHeight)} className="bt">
             <span>About us</span>
           </Nav.Link>
           </Link>
           <Link to="con" spy={true} smooth={true}>
-          <Nav.Link href="/#" style={{ float: "right", color: "white" ,backgroundColor:`${props.offY > 500 && props.offY < 6500 ? "#bf4b21":""}`,borderRadius:"10px",marginLeft:"10px",marginTop:"14px"}}  onClick={()=>window.scrollTo(0,1150)} className="bt">
+          <Nav.Link href="/content" style={{ float: "right", color: "white" ,backgroundColor:`${props.offY > 500 && props.offY < 6500 ? "#bf4b21":""}`,borderRadius:"10px",marginLeft:"10px",marginTop:"14px"}}  onClick={()=>window.scrollTo(0,1150)} className="bt">
             <span>Story</span>
           </Nav.Link>
           </Link>
-          <Nav.Link href="/#" style={{ float: "right", color: "white" ,backgroundColor:`${props.offY < 500 ? "#bf4b21":""}`,borderRadius:"10px",marginTop:"14px"}} onClick={topScroll} className="bt">
+          <Nav.Link href="/Parallax" style={{ float: "right", color: "white" ,backgroundColor:`${props.offY < 500 ? "#bf4b21":""}`,borderRadius:"10px",marginTop:"14px"}} onClick={topScroll} className="bt">
             <span>Home</span>
           </Nav.Link>
         </Container>
